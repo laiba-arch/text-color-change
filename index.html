@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paragraph Color Changer</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      background: linear-gradient(to right, #99f2c8, #99f2c8);
+      color: #fff;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: rgb(153, 139, 61);
+      text-shadow: 1px 1px 3px black;
+    }
+    .myPara {
+      background: rgba(0,0,0,0.2);
+      padding: 15px;
+      border-radius: 10px;
+      width: 70%;
+      margin: 10px auto;
+      font-size: 18px;
+      transition: color 0.4s ease;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: white;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Color Changing Paragraphs</h1>
+
+  <p class="myPara">This is the <b>first</b> paragraph. It will turn <b>blue</b> when you click the button.</p>
+  <p class="myPara">This is the <b>second</b> paragraph. It will turn <b>green</b> when you click the button.</p>
+  <p class="myPara">This is the <b>third</b> paragraph. It will turn <b>yellow</b> when you click the button.</p>
+
+  <button id="changeBtn">Change Colors</button>
+  <script src="script.js"></script>
+</body>
+</html>
